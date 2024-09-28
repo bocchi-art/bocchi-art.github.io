@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Lexend Deca";
+  src: url("../fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  --background-color: #1F1F28;
+  --dark-background-color: #16161D;
+  --highlight-background-color: #2D4F67;
+
+  --text-color: #DCD7BA;
+  --highlight-text-color: #C8C093;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-family: "Lexend Deca";
+}
+
+#header {
+  width: 100%;
+}
+
+#main-text {
+  width: 50%;
+  margin: 2% auto;
+}
+
+#main-text img {
+  display: block;
+  margin: 5% auto;
+  max-height: 80vh;
+  max-width: 100%;
+  object-fit: center;
+}
+
+#main-text .article img {
+  max-height: 20vh;
+}
+
+#footer {
+  width: 100%;
+}
+
+a {
+  color: var(--highlight-text-color);
+}
+
+#home-link {
+  text-align: center;
+}
+
+#home-link a {
+  text-decoration: none;
+
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+#home-link a:hover,#home-link a:active {
+  color: var(--highlight-text-color);
+  transition: color 0.2s;
+}
+
+.article {
+  border-radius: 1vmin;
+  padding: 2%;
+  margin: 2% 0;
+
+  background-color: var(--dark-background-color);
+  transition: background-color 0.1s;
+}
+
+.article:hover, .article:active {
+  background-color: var(--highlight-background-color);
+  transition: background-color 0.1s;
+}
+
+.article a {
+  text-decoration: underline;
+  color: var(--text-color);
+  transition: color 0.2s;
+}
+
+.article a:hover, .article a:active {
+  color: var(--highlight-text-color);
+  transition: color 0.2s;
+}
